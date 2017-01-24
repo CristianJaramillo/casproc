@@ -77,3 +77,65 @@ footer .input-field input[type=search]:focus:not([readonly]),
 footer .input-field textarea.materialize-textarea:focus:not([readonly]) {
 	box-shadow: none;
 }
+
+.btn-social {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-size: 32px 32px;
+	border: none;
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+}
+
+.social-l {
+	background-size: 128px 128px;
+	height: 128px;
+	width: 128px;
+}
+
+.social-m {
+	background-size: 64px 64px;
+	height: 64px;
+	width: 64px;
+}
+
+.btn-facebook {
+	background-image: url('../img/facebook_circle_gray.png');
+}
+
+.btn-facebook:hover {
+	background-image: url('../img/facebook_circle_color.png');
+}
+
+.btn-twitter {
+	background-image: url('../img/twitter_circle_gray.png');
+}
+
+.btn-twitter:hover {
+	background-image: url('../img/twitter_circle_color.png');
+}
+
+.btn-youtube {
+	background-image: url('../img/youtube_circle_gray.png');
+}
+
+.btn-youtube:hover {
+	background-image: url('../img/youtube_circle_color.png');
+}
+
+.btn-instagram {
+	background-image: url('../img/instagram_circle_gray.png');
+}
+
+.btn-instagram:hover {
+	background-image: url('../img/instagram_circle_color.png');
+}
+
+.btn-linkedin {
+	background-image: url('../img/linkedin_circle_gray.png');
+}
+
+.btn-linkedin:hover {
+	background-image: url('../img/linkedin_circle_color.png');
+}
