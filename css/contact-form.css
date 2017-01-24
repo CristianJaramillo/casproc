@@ -1,0 +1,48 @@
+.input-field input:not([type]),
+.input-field input[type=text],
+.input-field input[type=password],
+.input-field input[type=email],
+.input-field input[type=url],
+.input-field input[type=time],
+.input-field input[type=date],
+.input-field input[type=datetime],
+.input-field input[type=datetime-local],
+.input-field input[type=tel],
+.input-field input[type=number],
+.input-field input[type=search],
+.input-field textarea.materialize-textarea  {
+	border: 1px solid #e5e5e5;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.input-field input:not([type]):focus:not([readonly]),
+.input-field input[type=text]:focus:not([readonly]),
+.input-field input[type=password]:focus:not([readonly]),
+.input-field input[type=email]:focus:not([readonly]),
+.input-field input[type=url]:focus:not([readonly]),
+.input-field input[type=time]:focus:not([readonly]),
+.input-field input[type=date]:focus:not([readonly]),
+.input-field input[type=datetime]:focus:not([readonly]),
+.input-field input[type=datetime-local]:focus:not([readonly]),
+.input-field input[type=tel]:focus:not([readonly]),
+.input-field input[type=number]:focus:not([readonly]),
+.input-field input[type=search]:focus:not([readonly]),
+.input-field textarea.materialize-textarea:focus:not([readonly]) {
+	border: 1px solid #8dede4 !important;
+	box-shadow: none;
+}
+
+.tajem-button {
+	background-color: white;
+	border-radius: 0px;
+	border: 1px solid #00e0d0;
+	box-shadow: none;
+	color: #00e0d0;
+}
+
+.tajem-button:hover {
+	background-color: #00e0d0;
+	color: white;
+}

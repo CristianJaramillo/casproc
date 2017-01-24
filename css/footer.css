@@ -1,0 +1,79 @@
+footer {
+	background-image: url('../img/footer-background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+footer.page-footer {
+	padding-top: 0px;
+}
+
+
+footer .tajem-footer {
+	background-color: rgba(0, 105, 92, 0.8);
+}
+
+footer .tajem-footer .tajem-button{
+	height: 47px;
+	margin-left: 3px;
+	background-color: rgba(221, 221, 221, 0.4);
+	color: rgba(0, 105, 92, 0.8);
+	border-color: #ddd;
+	box-shadow: none;
+}
+
+footer .tajem-footer .tajem-button:hover {
+	background-color: rgba(221, 221, 221, 0.8);
+}
+
+footer .tajem-footer a {
+	color: white;
+	margin-right: 10px;
+}
+
+footer .tajem-logo {
+	color: #00e0d0;
+}
+
+footer h5, footer p {
+	color: #ebeaed;
+}
+
+footer .tajem-footer a:hover {
+	color: #8dede4;
+}
+
+footer .input-field input:not([type]),
+footer .input-field input[type=text],
+footer .input-field input[type=password],
+footer .input-field input[type=email],
+footer .input-field input[type=url],
+footer .input-field input[type=time],
+footer .input-field input[type=date],
+footer .input-field input[type=datetime],
+footer .input-field input[type=datetime-local],
+footer .input-field input[type=tel],
+footer .input-field input[type=number],
+footer .input-field input[type=search],
+footer .input-field textarea.materialize-textarea  {
+	border: 1px solid #e5e5e5;
+	color: white;
+	padding: 0px 10px;
+}
+
+
+footer .input-field input:not([type]):focus:not([readonly]),
+footer .input-field input[type=text]:focus:not([readonly]),
+footer .input-field input[type=password]:focus:not([readonly]),
+footer .input-field input[type=email]:focus:not([readonly]),
+footer .input-field input[type=url]:focus:not([readonly]),
+footer .input-field input[type=time]:focus:not([readonly]),
+footer .input-field input[type=date]:focus:not([readonly]),
+footer .input-field input[type=datetime]:focus:not([readonly]),
+footer .input-field input[type=datetime-local]:focus:not([readonly]),
+footer .input-field input[type=tel]:focus:not([readonly]),
+footer .input-field input[type=number]:focus:not([readonly]),
+footer .input-field input[type=search]:focus:not([readonly]),
+footer .input-field textarea.materialize-textarea:focus:not([readonly]) {
+	box-shadow: none;
+}

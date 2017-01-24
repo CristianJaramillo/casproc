@@ -1,0 +1,21 @@
+header {
+	background-image: url('../img/header-background.png'); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+header nav {
+	box-shadow: none;
+	background-color: rgba(51, 51, 51, 0.08);
+}
+
+nav .nav-wrapper a {
+	color: #00e0d0;
+}
+
+.tajem-header {
+	height: 600px;
+	background-color: rgba(0, 105, 92, 0.8);
+}
