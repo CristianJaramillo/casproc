@@ -41,19 +41,19 @@
               <li>
                 <div class="userView">
                   <div class="background">
-                    <img src="http://lorempixel.com/300/300/technics/4">
+                    <img class="responsive-img" src="http://lorempixel.com/300/300/technics/4">
                   </div>
                   <a href="#!user"><img class="circle" src="http://lorempixel.com/250/250/people/1"></a>
                   <a href="#!name" class="white-text"><span class="name">John Doe</span></a>
                   <a href="#!email" class="white-text"><span class="email">jdandturk@gmail.com</span></a>
                 </div>
               </li>
-              <li><a href="#" class="black-text">INICIO</a></li>
-              <li><a href="#" class="black-text">EVENTOS</a></li>
-              <li><a href="#" class="black-text">PRODUCTOS</a></li>
-              <li><a href="#" class="black-text">BLOG</a></li>
-              <li><a href="#" class="black-text">CONTACTO</a></li>
-              <li><a href="#" class="black-text">INGRESAR</a></li>
+              <li><a href="#">INICIO</a></li>
+              <li><a href="#">EVENTOS</a></li>
+              <li><a href="#">PRODUCTOS</a></li>
+              <li><a href="#">BLOG</a></li>
+              <li><a href="#">CONTACTO</a></li>
+              <li><a href="#">INGRESAR</a></li>
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
