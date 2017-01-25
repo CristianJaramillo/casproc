@@ -11,9 +11,10 @@
 .input-field input[type=number],
 .input-field input[type=search],
 .input-field textarea.materialize-textarea  {
-	border: 1px solid #e5e5e5;
-	padding-left: 10px;
-	padding-right: 10px;
+	border: 2px solid #e5e5e5;
+	padding: 0px 10px; 
+	margin: 0px;
+	width: calc(100% - 20px);
 }
 
 
@@ -30,14 +31,14 @@
 .input-field input[type=number]:focus:not([readonly]),
 .input-field input[type=search]:focus:not([readonly]),
 .input-field textarea.materialize-textarea:focus:not([readonly]) {
-	border: 1px solid #8dede4 !important;
+	border: 2px solid #8dede4;
 	box-shadow: none;
 }
 
 .tajem-button {
 	background-color: white;
 	border-radius: 0px;
-	border: 1px solid #00e0d0;
+	border: 2px solid #00e0d0;
 	box-shadow: none;
 	color: #00e0d0;
 }

@@ -13,17 +13,21 @@ footer .tajem-footer {
 	background-color: rgba(0, 105, 92, 0.8);
 }
 
-footer .tajem-footer .tajem-button{
-	height: 47px;
-	margin-left: 3px;
+footer .tajem-footer .tajem-button
+{
+	height: 49px;
+	width: 49px;
 	background-color: rgba(221, 221, 221, 0.4);
 	color: rgba(0, 105, 92, 0.8);
 	border-color: #ddd;
 	box-shadow: none;
+	padding: 0px;
 }
 
 footer .tajem-footer .tajem-button:hover {
-	background-color: rgba(221, 221, 221, 0.8);
+	background-color: #00e0d0;
+	border: 2px solid #00e0d0;
+	color: white;
 }
 
 footer .tajem-footer a {
@@ -56,26 +60,9 @@ footer .input-field input[type=tel],
 footer .input-field input[type=number],
 footer .input-field input[type=search],
 footer .input-field textarea.materialize-textarea  {
-	border: 1px solid #e5e5e5;
+	border: 2px solid #e5e5e5;
 	color: white;
-	padding: 0px 10px;
-}
-
-
-footer .input-field input:not([type]):focus:not([readonly]),
-footer .input-field input[type=text]:focus:not([readonly]),
-footer .input-field input[type=password]:focus:not([readonly]),
-footer .input-field input[type=email]:focus:not([readonly]),
-footer .input-field input[type=url]:focus:not([readonly]),
-footer .input-field input[type=time]:focus:not([readonly]),
-footer .input-field input[type=date]:focus:not([readonly]),
-footer .input-field input[type=datetime]:focus:not([readonly]),
-footer .input-field input[type=datetime-local]:focus:not([readonly]),
-footer .input-field input[type=tel]:focus:not([readonly]),
-footer .input-field input[type=number]:focus:not([readonly]),
-footer .input-field input[type=search]:focus:not([readonly]),
-footer .input-field textarea.materialize-textarea:focus:not([readonly]) {
-	box-shadow: none;
+	width: calc(100% - 76px);
 }
 
 .btn-social {
@@ -86,56 +73,50 @@ footer .input-field textarea.materialize-textarea:focus:not([readonly]) {
 	display: inline-block;
 	height: 32px;
 	width: 32px;
+	border-radius: 16px;
 }
 
 .social-l {
 	background-size: 128px 128px;
 	height: 128px;
 	width: 128px;
+	border-radius: 64px;
 }
 
 .social-m {
 	background-size: 64px 64px;
 	height: 64px;
 	width: 64px;
+	border-radius: 32px;
+}
+
+.social-s {
+	background-size: 48px 48px;
+	height: 48px;
+	width: 48px;
+	border-radius: 24px;
 }
 
 .btn-facebook {
 	background-image: url('../img/facebook_circle_gray.png');
 }
 
-.btn-facebook:hover {
-	background-image: url('../img/facebook_circle_color.png');
-}
-
 .btn-twitter {
 	background-image: url('../img/twitter_circle_gray.png');
-}
-
-.btn-twitter:hover {
-	background-image: url('../img/twitter_circle_color.png');
 }
 
 .btn-youtube {
 	background-image: url('../img/youtube_circle_gray.png');
 }
 
-.btn-youtube:hover {
-	background-image: url('../img/youtube_circle_color.png');
-}
-
 .btn-instagram {
 	background-image: url('../img/instagram_circle_gray.png');
-}
-
-.btn-instagram:hover {
-	background-image: url('../img/instagram_circle_color.png');
 }
 
 .btn-linkedin {
 	background-image: url('../img/linkedin_circle_gray.png');
 }
 
-.btn-linkedin:hover {
-	background-image: url('../img/linkedin_circle_color.png');
+.btn-facebook:hover, .btn-twitter:hover, .btn-youtube:hover, .btn-instagram:hover, .btn-linkedin:hover {
+	background-color: #00e0d0;
 }
