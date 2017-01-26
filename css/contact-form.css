@@ -31,19 +31,18 @@
 .input-field input[type=number]:focus:not([readonly]),
 .input-field input[type=search]:focus:not([readonly]),
 .input-field textarea.materialize-textarea:focus:not([readonly]) {
-	border: 2px solid #8dede4;
+	border: 2px solid #FF4800;
 	box-shadow: none;
 }
 
 .tajem-button {
 	background-color: white;
 	border-radius: 0px;
-	border: 2px solid #00e0d0;
-	box-shadow: none;
-	color: #00e0d0;
+	border: 2px solid #FF4800;
+	color: #FF4800;
 }
 
 .tajem-button:hover {
-	background-color: #00e0d0;
+	background-color: #FF4800;
 	color: white;
 }

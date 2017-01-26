@@ -6,6 +6,8 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/html.css">
     <link rel="stylesheet" type="text/css" href="css/body.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/content.css">
@@ -61,7 +63,7 @@
         </nav>
         
         <div class="container">
-          <div class="carousel carousel-slider center" data-indicators="true">
+          <div id="advertising" class="carousel carousel-slider center" data-indicators="true">
             <div class="carousel-item white-text" href="#one!">
               <h2>First Panel</h2>
               <p class="white-text">This is your first panel</p>
@@ -99,11 +101,7 @@
     <div class="container">
       <div class="row">
 
-        <div class="col s12 m6 l6 hide-on-med-and-down">
-          <img class="responsive-img" src="https://eventoscasproc.files.wordpress.com/2015/06/dscf2241.jpg">
-        </div>
-      
-        <div class="col s12 m12 l6">
+        <div class="col s12 m6 l6">
           <h3>Bienvenido a Casproc</h3>
           
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -117,17 +115,23 @@
 
         </div>
 
+        <div class="col s12 m6 l6">        
+          <img class="responsive-img" style="margin-top:20px" src="img/table-sunrise.jpg">
+        </div>
+
       </div>
 
     </div>
 
+    <!-- CONTENT -->
     <div class="background-casproc">
       
       <div class="container">
-        <h5 class="center-align" style="line-height: 300px; color: white;">Más contenido</h5>       
+        <h5 class="center-align" style="line-height: 300px; color: white;">Más contenido</h5>  
       </div>
 
     </div>
+    <!-- CONTENT -->
 
 
     <div class="container">
@@ -140,7 +144,11 @@
             <div class="row">
 
               <div class="col s12">
-                <h5>Contacto</h5>
+                <h5>Mantengase en Contacto con Casproc</h5>
+
+                <p>Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
               </div>
 
               <div class="input-field col s12">
@@ -162,6 +170,25 @@
 
         <div class="col s12 m12 l6">
 
+          <p>
+            <i class="material-icons left">phone</i> +52 1 55 1371 0288
+          </p>
+          <p>
+            <i class="material-icons left">mail</i> contacto@casproc.com
+          </p>
+          <p>
+            <i class="material-icons left">location_on</i> 
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <p>Tambien estamos en:</p>
+
+          <a href="#" class="btn-social btn-facebook"></a>
+          <a href="#" class="btn-social btn-twitter"></a>
+          <a href="#" class="btn-social btn-youtube"></a>
+          <a href="#" class="btn-social btn-instagram"></a>
+          <a href="#" class="btn-social btn-linkedin"></a>
+
           <dir class="video-container">
             <iframe frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDIlBu0g-OyMO02fbMsAE7b6FNZYsXt9c
@@ -175,12 +202,13 @@
     </div>
 
     <footer class="page-footer">
+
       <div class="tajem-footer">
         <div class="container">
           
           <div class="row">    
             <div class="col s12 m12 l4">
-              <h5 class="tajem-logo">Casproc</h5>  
+              <h6 class="tajem-logo">Casproc</h6>  
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -190,7 +218,7 @@
             </div>
 
             <div class="col s12 m12 l4">
-              <h5>Nuestras Instalaciones</h5>
+              <h6 class="white-text">Nuestras Instalaciones</h6>
               <p>
                  <i class="material-icons left">location_on</i> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  tempor incididunt ut labore et dolore magna aliqua.
@@ -198,11 +226,14 @@
               <p>
                 <i class="material-icons left">phone</i> +52 1 55 1371 0288
               </p>
+              <p>
+                <i class="material-icons left">mail</i> contacto@casproc.com
+              </p>
             </div>
 
             <div class="col s12 m12 l4">
 
-              <h5>Mantente Actualizado</h5>
+              <h6 class="white-text">Mantente Actualizado</h6>
               
               <div class="row">
                 <form class="col s12">
@@ -230,21 +261,26 @@
             </div>
           </div>
 
-          <div class="footer-copyright">
-            <div class="row">
-              <div class="col s6 left-align">
-                <a class=" href="#!">Ayuda</a>
-                <a class=" href="#!">Terminos y condiciones</a>
-                <a class=" href="#!">Privacidad</a>
-              </div>
-              <div class="col s6 right-align">
-                Copyright © 2017 - Casproc   
-              </div>
-            </div>
-          </div>
-
         </div>
-      </div>      
+
+        <div class="footer-copyright">
+
+        <div class="container">
+          <div class="row">
+            <div class="col left-align hide-and-down m6 l6">
+              <a class="" href="#!">Ayuda</a>
+              <a class="" href="#!">Terminos y condiciones</a>
+              <a class="" href="#!">Privacidad</a>
+            </div>
+            <div class="col s12 m6 l6 right-align">
+              Copyright © 2017 - Casproc   
+            </div>
+          </div>          
+        </div>
+
+      </div>
+
+      </div>
     </footer>
 
     <!--Import jQuery before materialize.js-->
@@ -254,13 +290,13 @@
 
       $(document).ready(function(){
         
-        $('.carousel').carousel({full_width: true});
+        $('#advertising').carousel({full_width: true});
 
         $(".button-collapse").sideNav();
 
         window.setInterval(function(){
-          $('.carousel').carousel('next')
-        },3000);
+          $('#advertising').carousel('next')
+        },5000);
 
       });
       

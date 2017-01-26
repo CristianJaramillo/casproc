@@ -1,45 +1,48 @@
 header {
-	background-image: url('../img/header-background.png'); 
+	background-image: url('../img/yellowe-flowers.jpg'); 
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center bottom;
 	margin-bottom: 20px;
 }
 
 header nav {
+	background-image: url('../img/body.png');
 	box-shadow: none;
-	background-color: rgba(51, 51, 51, 0.08);
-}
-
-nav .brand-logo {
-	color: #00e0d0;
-}
-
-nav .nav-wrapper ul:first-child a {
-	color: white;
-}
-
-nav .nav-wrapper ul:first-child a:hover {
-	color: #00e0d0;
-}
-
-.side-nav {
-	background-color: rgba(0, 105, 92, 0.8);
-}
-
-.side-nav li:hover {
-	background-color: #00e0d0;
-	color: white;
-}
-
-
-.side-nav ul li + div {
-	background-color: transparent;
-}
-
-.side-nav li a {
-	color: white;
 }
 
 .tajem-header {
-	background-color: rgba(0, 105, 92, 0.8);
+	background-color: rgba(147, 177, 23, 0.8);
+}
+
+nav .brand-logo {
+	color: white;
+}
+
+nav ul li a {
+	color: #c1df4a;
+}
+
+nav ul li a:hover {
+	color: white;
+}
+
+.side-nav {
+	background-image: url('../img/body.png');
+}
+
+.side-nav li a {
+	color: #c1df4a;
+}
+
+.side-nav li:hover {
+	background-color: rgba(147, 177, 23, 0.8);
+}
+
+.side-nav li a:hover {
+	color: white;
+}
+
+.side-nav li:first-child:hover {
+	background-color: transparent;
 }
