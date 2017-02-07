@@ -6376,36 +6376,46 @@ html {
   color: #6C6C6C; }
 
 body {
-  background-color: white; }
+  background-image: url("../img/bg-body.jpg");
+  overflow-x: hidden; }
 
-header {
+a {
+  color: #33ccff;
+  font-weight: bold; }
+  a:hover {
+    text-decoration: underline; }
+
+header.index {
   background-image: url("../img/yellowe-flowers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top; }
-  header nav {
-    background-color: rgba(147, 177, 23, 0.7); }
-    header nav ul li a {
+header nav {
+  background-color: #15261c; }
+  header nav ul li a {
+    color: #c1df4a; }
+    header nav ul li a.active {
+      background-image: url("../img/nav-active-item.png");
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      color: white; }
+    header nav ul li a:hover {
+      background-image: #1f3629;
+      color: white;
+      text-decoration: none; }
+  header nav .side-nav {
+    background-color: #15261c; }
+    header nav .side-nav li {
+      background-color: transparent; }
+      header nav .side-nav li:hover {
+        background-image: url("../img/bg-body-green.png"); }
+    header nav .side-nav a {
       color: #c1df4a; }
-      header nav ul li a.active {
-        border-bottom: 2px solid #FF4800;
+      header nav .side-nav a.active {
+        color: white;
+        background-image: none; }
+      header nav .side-nav a:hover {
         color: white; }
-      header nav ul li a:hover {
-        background-color: #FF4800;
-        color: white; }
-    header nav .side-nav {
-      background-color: rgba(147, 177, 23, 0.7); }
-      header nav .side-nav li {
-        background-color: transparent; }
-        header nav .side-nav li:hover {
-          background-color: #FF4800; }
-      header nav .side-nav a {
-        color: #c1df4a; }
-        header nav .side-nav a.active {
-          background-color: #FF4800;
-          color: white; }
-        header nav .side-nav a:hover {
-          color: white; }
 
 input:not([type]),
 input[type=text],
@@ -6444,7 +6454,7 @@ textarea.materialize-textarea {
   padding: 0.8rem 10px 1.6rem 10px; }
 
 footer.page-footer {
-  background-color: rgba(147, 177, 23, 0.7);
+  background-color: #15261c;
   background-image: url("../img/yellowe-flowers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -6461,13 +6471,9 @@ footer.page-footer {
     content: "";
     z-index: -1; }
   footer.page-footer .footer-copyright {
-    background-color: rgba(147, 177, 23, 0.7); }
+    background-color: #15261c; }
     footer.page-footer .footer-copyright a {
-      color: #e0e0e0;
       margin-left: 20px; }
-      footer.page-footer .footer-copyright a:hover {
-        color: white;
-        text-decoration: underline; }
 
 .social {
   background-color: transparent;
@@ -6508,7 +6514,8 @@ footer.page-footer {
     width: 128px; }
 
 .casproc-bg {
-  background-color: rgba(147, 177, 23, 0.7); }
+  background-color: #c1df4a;
+  background-image: url("../img/bg-body-green.png"); }
 
 .input-field.suscribe input[type=email] {
   border: 2px solid #e5e5e5;
@@ -6539,26 +6546,75 @@ footer.page-footer {
     background-color: #FF4800;
     color: white; }
 
-.top-sub-title {
-  border-bottom: 1px solid white;
-  color: white;
-  font-size: 12px;
-  padding-bottom: 5px; }
+.news {
+  background-color: rgba(0, 0, 0, 0.3); }
+  .news .slider .slides {
+    background-color: transparent; }
+    .news .slider .slides li .caption {
+      top: 12.5%;
+      left: 10%;
+      width: 80%; }
+      .news .slider .slides li .caption h4 {
+        color: #c1df4a;
+        font-weight: bold; }
+      .news .slider .slides li .caption i.material-icons {
+        color: #c1df4a; }
+  .news .btn-casproc {
+    background-color: #c1df4a;
+    border-color: #c1df4a;
+    color: white; }
+    .news .btn-casproc:hover {
+      background-color: #c1df4a;
+      border-color: #c1df4a;
+      text-decoration: none; }
 
-.news .slider .slides {
-  background-color: transparent; }
-  .news .slider .slides li .caption {
-    top: 10%;
-    left: 10%;
-    width: 80%; }
-.news .btn-casproc {
-  background-color: #FF4800;
-  color: white; }
+.team {
+  background-image: url("../img/bg-body-green.png");
+  color: #F6F6F6; }
+  .team h4,
+  .team h5,
+  .team h6 {
+    color: #c1df4a; }
+  .team p.separator {
+    border-top: 1px solid #CCCCCC;
+    padding: 20px 0px; }
 
 header .event {
-  background-color: #293C1D; }
+  background-color: #293C1D;
+  background-image: url("../img/bg-body-green.png"); }
   header .event .btn-casproc {
     background-color: #FF4800;
     color: white; }
+    header .event .btn-casproc:hover {
+      text-decoration: none; }
+  header .event h4 {
+    color: #c1df4a; }
+  header .event p {
+    color: #CCCCCC; }
+    header .event p i.material-icons {
+      color: #c1df4a; }
+    header .event p.top-sub-title {
+      border-bottom: 1px solid #CCCCCC;
+      color: #CCCCCC;
+      font-size: 12px;
+      padding-bottom: 5px; }
+
+.carousel-cell {
+  background-color: #c1df4a;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  width: 100%; }
+  .carousel-cell .cell-group {
+    position: relative;
+    display: block;
+    height: 250px;
+    margin-bottom: 5px; }
+    .carousel-cell .cell-group:last-child {
+      margin-bottom: 0px; }
+    .carousel-cell .cell-group img {
+      height: 250px;
+      position: absolute;
+      width: 250px; }
 
 /*# sourceMappingURL=casproc.css.map */

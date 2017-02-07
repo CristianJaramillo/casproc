@@ -7,11 +7,13 @@ $casproc-navbar-font-color: #c1df4a
 // $casproc-navbar-font-color: #293C1D
 $casproc-input-border-color: #e5e5e5
 $casproc-nav-hover-color: white
+$casproc-nav-item-color: #c1df4a
 // background color's
-// $casproc-bg: #193827
-$casproc-bg: rgba(147, 177, 23, 0.7)
+$casproc-bg: #15261c
+$casproc-bg-secundary: #1f3629
 // casproc image's
-$casproc-bg-image: url('../img/body.png')
+$casproc-bg-body-image: url('../img/bg-body.jpg')
+$casproc-bg-image: url('../img/bg-body-green.png')
 $casproc-bg-flowers-image: url('../img/yellowe-flowers.jpg')
 // 
 // global
@@ -20,44 +22,54 @@ html
 	font-family: $casproc-font-family
 	color: $casproc-font-color
 body
-	background-color: white
-	// background-image: url('../img/bg-body.jpg')
+	// background-color: white
+	background-image: $casproc-bg-body-image
+	overflow-x: hidden
+a
+	color: #33ccff
+	font-weight: bold
+	&:hover
+		text-decoration: underline
 // 
 // header
 // 
 header
-	background-image: $casproc-bg-flowers-image 
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center top
+	&.index
+		background-image: $casproc-bg-flowers-image 
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center top
 	nav
 		background-color: $casproc-bg
-		// background-image: $casproc-bg-image
 		a
 			// color: $casproc-navbar-font-color
 		ul
 			li
 				a
-					color: $casproc-navbar-font-color
+					color: $casproc-nav-item-color
 					&.active
-						border-bottom: 2px solid #FF4800
+						background-image: url('../img/nav-active-item.png')
+						background-position: bottom center
+						background-repeat: no-repeat
+						// border-bottom: 2px solid #FF4800
 						color: white
 					&:hover
-						background-color: #FF4800
+						background-image: $casproc-bg-secundary
 						color: $casproc-nav-hover-color
+						text-decoration: none
 		.side-nav
 			background-color: $casproc-bg
-			// background-image: url('../img/bg-body.jpg')
 			// background-image: $casproc-bg-image
 			li
 				background-color: transparent
 				&:hover
-					background-color: #FF4800
+					background-image: $casproc-bg-image
+					// background-color: #FF4800
 			a
-				color: $casproc-navbar-font-color
+				color: $casproc-nav-item-color
 				&.active
-					background-color: #FF4800
 					color: $casproc-nav-hover-color
+					background-image: none
 				&:hover
 					color: $casproc-nav-hover-color
 // 
@@ -112,11 +124,7 @@ footer.page-footer
 		background-color: $casproc-bg
 		// background-image: $casproc-bg-image
 		a
-			color: #e0e0e0
-			margin-left: 20px 
-			&:hover
-				color: white
-				text-decoration: underline
+			margin-left: 20px
 //
 // social-buttons
 //
@@ -165,8 +173,9 @@ footer.page-footer
 // helper's
 //
 .casproc-bg
-	background-color: $casproc-bg
-	// background-image: $casproc-bg-image
+	background-color: $casproc-nav-item-color
+	// background-color: $casproc-bg
+	background-image: $casproc-bg-image
 //
 // custom input-field
 //
@@ -204,35 +213,86 @@ footer.page-footer
 		&:hover
 			background-color: #FF4800
 			color: white
-//
-// 
-//
-.top-sub-title
-	border-bottom: 1px solid white
-	color: white
-	font-size: 12px
-	padding-bottom: 5px
 ///
 /// index.html
 ///
 .news
+	background-color: rgba(0,0,0, 0.3)
 	.slider
 		.slides
 			background-color: transparent
 			li
 				.caption
-					top: 10%
+					top: 12.5%
 					left: 10%
 					width: 80%
+					h4
+						color: $casproc-nav-item-color
+						font-weight: bold
+					i
+						&.material-icons
+							color: $casproc-nav-item-color
 	.btn-casproc
-		background-color: #FF4800
+		background-color: $casproc-nav-item-color
+		border-color: $casproc-nav-item-color
 		color: white
+		&:hover
+			background-color: $casproc-nav-item-color
+			border-color: $casproc-nav-item-color
+			text-decoration: none
+.team
+	background-image: $casproc-bg-image
+	color: #F6F6F6
+	h4,
+	h5,
+	h6
+		color: $casproc-nav-item-color
+	p
+		&.separator
+			border-top: 1px solid #CCCCCC
+			padding: 20px 0px
 ///
 /// eventos.html
 ///
 header
 	.event
 		background-color: #293C1D
+		background-image: $casproc-bg-image
 		.btn-casproc
 			background-color: #FF4800
 			color: white
+			&:hover
+				text-decoration: none
+		h4
+			color: $casproc-nav-item-color
+		p
+			color: #CCCCCC
+			i
+				&.material-icons
+					color: $casproc-nav-item-color
+			&.top-sub-title
+				border-bottom: 1px solid #CCCCCC
+				color: #CCCCCC
+				font-size: 12px
+				padding-bottom: 5px
+/// 
+/// custom carousel
+///
+.carousel-cell
+	background-color: $casproc-nav-item-color
+	margin-bottom: 20px
+	padding-bottom: 5px
+	padding-top: 5px
+	position:relative
+	width: 100%
+	.cell-group
+		position: relative
+		display: block
+		height: 250px
+		margin-bottom: 5px
+		&:last-child
+			margin-bottom: 0px
+		img
+			height: 250px
+			position: absolute
+			width: 250px
