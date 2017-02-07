@@ -6384,6 +6384,8 @@ a {
   font-weight: bold; }
   a:hover {
     text-decoration: underline; }
+  a.button-collapse {
+    text-decoration: none; }
 
 header.index {
   background-image: url("../img/yellowe-flowers.jpg");
@@ -6578,6 +6580,11 @@ footer.page-footer {
   .team p.separator {
     border-top: 1px solid #CCCCCC;
     padding: 20px 0px; }
+  .team .btn-casproc {
+    background-color: #FF4800;
+    color: white; }
+    .team .btn-casproc:hover {
+      text-decoration: none; }
 
 header .event {
   background-color: #293C1D;
@@ -6604,6 +6611,7 @@ header .event {
   margin-bottom: 20px;
   padding-bottom: 5px;
   padding-top: 5px;
+  position: relative;
   width: 100%; }
   .carousel-cell .cell-group {
     position: relative;
