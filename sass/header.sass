@@ -1,0 +1,28 @@
+nav
+	background-color: $casproc-primary-background-color
+	ul
+		li
+			a
+				color: $casproc-nav-item-color
+				&.active
+					background-image: url('../img/nav-active-item.png')
+					background-position: bottom center
+					background-repeat: no-repeat
+					color: white
+				&:hover
+					background-color: none
+					color: $casproc-nav-item-hover-color
+					text-decoration: none
+	.side-nav
+		background-color: $casproc-primary-background-color
+		li
+			background-color: transparent
+			&:hover
+				background-image: $casproc-nav-item-background-image
+			a
+				color: $casproc-nav-item-color
+				&.active
+					color: $casproc-nav-item-hover-color
+					background-image: none
+				&:hover
+					color: $casproc-nav-item-hover-color

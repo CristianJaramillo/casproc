@@ -6454,7 +6454,6 @@ input[type=number],
 input[type=search],
 textarea.materialize-textarea {
   border: 2px solid #e5e5e5;
-  border-color: #e5e5e5;
   padding: 0px 10px;
   margin: 0 0 5px 0;
   width: calc(100% - 20px); }
@@ -6472,7 +6471,6 @@ textarea.materialize-textarea {
   input[type=search]:focus:not([readonly]),
   textarea.materialize-textarea:focus:not([readonly]) {
     border: 2px solid #E64A19;
-    border-color: #c1df4a;
     box-shadow: none; }
 
 textarea.materialize-textarea {
@@ -6626,8 +6624,5 @@ footer.page-footer {
 
 .primary-event {
   background-image: url("../img/bg-body-green.png"); }
-
-.primary-event p {
-  color: #cccccc; }
 
 /*# sourceMappingURL=casproc.css.map */

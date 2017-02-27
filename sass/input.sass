@@ -1,0 +1,55 @@
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea
+	// general styles
+	border: 2px solid $casproc-input-border-color
+	border-color: #e5e5e5
+	padding: 0px 10px
+	margin: 0 0 5px 0
+	width: calc(100% - 20px)
+	// Focused input style
+	&:focus:not([readonly])
+		border: 2px solid $casproc-button-dark-primary-color
+		border-color: $casproc-nav-item-color
+		box-shadow: none
+textarea
+	&.materialize-textarea
+		padding: .8rem 10px 1.6rem 10px
+
+.input-field
+	&.suscribe
+		input[type=email]
+			border: 2px solid #e5e5e5
+			color: #e5e5e5
+			height: 45px
+			width: calc(100% - 76px)
+			&:focus:not([readonly])
+				border: 2px solid $casproc-nav-item-color
+				box-shadow: none
+		.btn
+			@extend .right
+			background-color: #e5e5e5
+			border-color: #dddddd
+			color: $casproc-button-primary-color
+			height: 49px
+			padding: 0px
+			width: 49px
+			&:hover
+				background-color: $casproc-nav-item-color
+				border: 2px solid $casproc-nav-item-color
+				color: #e5e5e5
+			i
+				&.material-icons
+					color: $casproc-nav-item-color
+				&:hover
+					color: white
