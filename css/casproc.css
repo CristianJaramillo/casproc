@@ -6478,12 +6478,14 @@ textarea.materialize-textarea {
 textarea.materialize-textarea {
   padding: 0.8rem 10px 1.6rem 10px; }
 
-.input-field.suscribe input[type=email] {
+.input-field.suscribe input[type=email],
+.input-field.suscribe input[type=text].autocomplete {
   border: 2px solid #e5e5e5;
   color: #e5e5e5;
   height: 45px;
   width: calc(100% - 76px); }
-  .input-field.suscribe input[type=email]:focus:not([readonly]) {
+  .input-field.suscribe input[type=email]:focus:not([readonly]),
+  .input-field.suscribe input[type=text].autocomplete:focus:not([readonly]) {
     border: 2px solid #c1df4a;
     box-shadow: none; }
 .input-field.suscribe .btn, .input-field.suscribe .btn-large {
@@ -6631,5 +6633,19 @@ footer.page-footer {
 
 .primary-event p {
   color: #cccccc; }
+
+.modal-login {
+  width: 30%;
+  border-radius: 10px; }
+  .modal-login .modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 0px 25px 0px; }
+    .modal-login .modal-content h4 {
+      background-color: #15261c;
+      text-align: center;
+      padding: 15px; }
+
+@@import navbar;
 
 /*# sourceMappingURL=casproc.css.map */

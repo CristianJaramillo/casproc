@@ -13,22 +13,87 @@
   </head>
   <body>
     
+    <!-- FIXED NAV -->
+    <div class="navbar-fixed hide-on-med-and-down" style="height: 2.5rem;">
+      <nav class="" style="line-height: 2.5rem; height: 2.5rem; box-shadow: none;">
+        <div class="nav-wrapper container">
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html"><i class="material-icons right" style="line-height: 2.5rem; height: 2.5rem;">perm_identity</i>Registro</a></li>
+            <li><a href="#login-modal"><i class="material-icons right" style="line-height: 2.5rem; height: 2.5rem;">lock_outline</i>Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- FIXED NAV -->
+
+    <!-- Modal Login -->
+    <div id="login-modal" class="modal modal-login">
+      <div class="modal-content">
+        
+        <h4><img src="img/logo-casproc.gif" class="responsive-img" style="max-width: 250px"></h4>
+        
+        <div class="row">
+          <form class="col s12">
+
+            <div class="row">
+              <div class="col s12 center-align">
+                Ingresa tus credenciales para iniciar sesión
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Correo electrónico" type="email">
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="Contraseña" type="password">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6 left-align">
+                <input type="checkbox" id="recordarme" />
+                <label for="recordarme">Recordarme</label>
+              </div>
+              <div class="input-field col s6 right-align">
+                <button class="btn">Iniciar</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s6 left-align">
+                <a href="#">Registrate</a>
+              </div>
+              <div class="input-field col s6 right-align">
+                <a href="#">olvidaste tu contraseña</a>
+              </div>
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Login  -->
+
     <!-- NAV -->
     <nav>
       <div class="nav-wrapper container">
         
         <a href="#" class="brand-logo">
           <img src="img/logo-casproc.gif" class="responsive-img" style="max-width: 150px">
-        </a>
+        </a>      
 
         <ul class="right hide-on-med-and-down">
-          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="index.html">Inicio</a></li>
           <li><a class="waves-effect" href="eventos.html">Eventos</a></li>
           <li><a class="waves-effect" href="productos.html">Productos</a></li>
           <li><a class="waves-effect" href="blog.html">Blog</a></li>
           <li><a class="waves-effect" href="nosotros.html">Nosotros</a></li>
           <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
-          <li><a class="active waves-effect" href="ingresar.html">Ingresar</a></li>
+          <li><a class="waves-effect" href="sass.html"><span class="right">(0)</span><i class="material-icons right">shopping_cart</i></a></li>
         </ul>
 
         <ul id="slide-out" class="side-nav">
@@ -42,13 +107,14 @@
               <a href="#!email" class="white-text"><span class="email">jdandturk@gmail.com</span></a>
             </div>
           </li>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a class="active" href="index.html">Inicio</a></li>
           <li><a href="eventos.html">Eventos</a></li>
           <li><a href="productos.html">Productos</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="contacto.html">Contacto</a></li>
-          <li><a class="active" href="ingresar.html">Ingresar</a></li>
+          <li><a href="ingresar.html">Login</a></li>
+          <li><a href="ingresar.html">Registro</a></li>
         </ul>
 
         <a href="#" data-activates="slide-out" class="button-collapse">
@@ -59,29 +125,13 @@
     </nav>
     <!-- NAV -->
     
-    <div class="container">
+    <!-- CONTAINER -->
+    <div class="container" style="margin-top: 2rem;margin-bottom: 2rem;">
       <div class="row">
-        <div class="col s12 m6 l6">
-          <form>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Correo electrónico" type="email">
-              </div>
-            </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <input placeholder="Contraseña" type="password">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col s12 center-align">
-                <button class="btn">Iniciar</button>
-              </div>  
-            </div>
-            
-          </form>
-        </div>
-        <div class="col s12 m6 l6">
+        <div class="col s12 offset-m2 m8 offset-l2 l8">
+
+          <h4>Registro de clientes y socios</h4>
+
           <form>
             <div class="row">
               <div class="input-field col s12">
@@ -127,6 +177,7 @@
         </div>
       </div>
     </div>
+    <!-- CONTAINER -->
 
     <!-- FOOTER -->
     <footer class="page-footer">
@@ -200,6 +251,7 @@
       $(document).ready(function(){
         $(".button-collapse").sideNav();
         $('select').material_select();
+        $('.modal').modal();
       });
     </script>
     
