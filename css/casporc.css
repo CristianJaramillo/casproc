@@ -6505,12 +6505,12 @@ textarea.materialize-textarea {
 nav {
   background-color: #15261c; }
   nav ul li a {
-    color: #01A859; }
+    color: #c1df4a; }
     nav ul li a.active {
       background-image: url("../img/nav-active-item.png");
       background-position: bottom center;
       background-repeat: no-repeat;
-      color: #c1df4a; }
+      color: white; }
     nav ul li a:hover {
       background-color: none;
       color: white;
@@ -6522,14 +6522,12 @@ nav {
       nav .side-nav li:hover {
         background-image: url("../img/bg-body-green.png"); }
       nav .side-nav li a {
-        color: #01A859; }
+        color: #c1df4a; }
         nav .side-nav li a.active {
           color: white;
           background-image: none; }
         nav .side-nav li a:hover {
           color: white; }
-  nav .button-collapse .material-icons {
-    color: #01A859; }
 
 footer.page-footer {
   background-color: transparent;
@@ -6577,7 +6575,7 @@ footer.page-footer {
       text-decoration: none; }
 
 .basic-container {
-  background-color: #01A859; }
+  background-color: #c1df4a; }
   .basic-container .container {
     width: 80%; }
   .basic-container .col {
@@ -6632,4 +6630,4 @@ footer.page-footer {
 .primary-event p {
   color: #cccccc; }
 
-/*# sourceMappingURL=casproc.css.map */
+/*# sourceMappingURL=casporc.css.map */
